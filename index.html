@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio de Dani ❤️ | Systems Engineering ">
+    <meta name="author" content="Daniela Fernanda Tipán">
+    <title>Portafolio | Dani T. ❤️</title>
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <!-- Bootstrap 5 CSS <link href="/assets/libs/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-white" href="#presentacion">
+                <img src="/assets/images/favicon.png" alt="Log DT" style="height:30px;" class="img-fluid">
+                &nbsp;Portafolio
+            </a>
+            <button class="navbar-toggler btn btn-lg bg-light" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item px-2">
+                        <a class="nav-link text-white" href="#presentacion">Inicio</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link text-white" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link text-white" href="#proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav-item px-2">
+                        <a class="nav-link text-white" href="#footer">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Presentation Section -->
+    <section id="presentacion" class="hero-section" style="background-image: url(/assets/images/back_skill.png);">
+        <div class="hero-bg-shapes">
+            <div class="shape"></div>
+            <div class="shape"></div>
+            <div class="shape"></div>
+        </div>
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-lg-6 text-center mt-5 mt-lg-0">
+                    <img src="assets/images/user/photo_perfil_re.png" alt="Profile DT" class="profile-img animate-on-scroll">
+                </div>
+                <div class="col-lg-6 hero-content animate-on-scroll">
+                    <h4 class="mb-3">Hey,<span></span> soy</h4>
+                    <h1 class="display-4 fw-bold mb-4">Dani <span class="highlight">Tipán</span></h1>
+                    <h3 class="mb-4 rotating-text">
+                        <span>Systems Engineering</span>
+                        <span>Developer</span>
+                        <span>Jr. Data Analyst</span>
+
+                    </h3>
+                    <div class="d-flex flex-wrap justify-content-center gap-3">
+                        <a href="mailto:tipan2002fernanda@gmail.com" target="_blank" aria-label="Gmail"
+                            class="btn btn-outline-light btn-lg px-4 py-3" data-bs-toggle="tooltip"
+                            data-bs-placement="top" title="Enviar Mensaje">
+                            <i class="fa fa-envelope"></i>
+                        </a>
+                        <a href="https://github.com/danif7o" target="_blank" aria-label="Github"
+                            class="btn btn-outline-light btn-lg px-4 py-3" data-bs-toggle="tooltip"
+                            data-bs-placement="top" title="Ir a mi Github!">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/daniela-tipan-7d/" target="_blank" aria-label="LinkedIn"
+                            class="btn btn-outline-light btn-lg px-4 py-3" data-bs-toggle="tooltip"
+                            data-bs-placement="top" title="Ir a mi LinkedIn!">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <button class="btn btn-outline-light btn-lg px-4 py-3" data-bs-toggle="modal" data-bs-target="#modalCV" title="Mirar CV">
+                            <i class="fas fa-file-pdf"></i>
+                        </button>
+                    </div>
+                    <div class=" d-flex flex-wrap justify-content-center gap-3 py-3">
+                        <a href="#proyectos"  target="_blank" aria-label="Projectos Dani" class="btn btn-outline-primary btn-sm px-4 py-3"
+                            data-bs-toggle="tooltip"
+                            data-bs-placement="left" title="Mirar Proyectos"><i class="fa fa-code ms-2"></i>  Proyectos
+                        </a>
+                        <button class="mx-2 btn btn-outline-light btn-sm px-4 py-3" data-bs-toggle="modal" data-bs-target="#modal-about" title="Sobre Mi">
+                            <i class="fas fa-user"></i> Sobre Mi
+                        </button>
+                    </div>
+                </div>
+                
+                <!-- Start modal: CV -->
+                <div class="modal fade" id="modalCV" tabindex="-1">
+                    <div class="modal-dialog modal-xl modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title about"> <i class="fas fa-file"></i> CV_Tipan_Daniela</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+
+                            <div class="modal-body p-0">
+                                <!-- PDF -->
+                                <iframe 
+                                src="/assets/docs/CV_Daniela_Tipan_S.pdf"
+                                style="width:100%; height:80vh;"
+                                frameborder="0">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Start modal: About me -->
+                <div class="modal fade" id="modal-about" tabindex="-1">
+                    <div class="modal-dialog modal-dialog-centered">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title about"><i class="fas fa-star"></i>Sobre Mi</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+
+                            <div class="modal-body px-4">
+                                <p>
+                                    Soy Dani,<span class="about"> Ingeniera en Sistemas</span> y <span class="about">Desarrolladora de Software</span> 
+                                    en formación, apasionada por la tecnología.</span> 
+                                </p>
+                                <p>
+                                    Manejo tecnologías como: <span class="tags-about">HTML</span>, <span class="tags-about">CSS</span>,
+                                    <span class="tags-about">JavaScript</span>, entre otras.
+                                    Frameworks como <span class="tags-about">Django</span> y <span class="tags-about">.NET</span>.  
+                                    También disfruto trabajar con <span class="tags-about">SQL</span>, 
+                                    <span class="tags-about">Python</span> y <span class="tags-about">Power BI</span>.
+                                </p>
+                                <p>
+                                    Me considero <span class="about">proactiva</span>, <span class="about">creativa</span> y 
+                                    siempre lista para aprender algo nuevo.  
+                                    Mi objetivo es crecer como profesional y aportar valor en cada proyecto.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Presentation Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <h2 class="section-title text-center animate-on-scroll">Skills Técnicas</h2>
+            <p class="text-center mb-5 animate-on-scroll">Lenguajes y tecnologías</p>
+
+            <div class="row g-4 animate-on-scroll">
+                <!-- Skill Card -->
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-card">
+                        <i class="fa-brands fa-python skill-icon"></i>
+                        <h5>Python</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-card">
+                        <i class="fa-brands fa-js skill-icon"></i>
+                        <h5>JavaScript</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-card">
+                        <i class="fa-brands fa-html5 skill-icon"></i>
+                        <h5>HTML5</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-card">
+                        <i class="fa-brands fa-css3-alt skill-icon"></i>
+                        <h5>CSS3</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-card">
+                        <i class="fa-brands fa-flutter skill-icon"></i>
+                        <h5>Flutter</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-card">
+                        <i class="fa-brands fa-microsoft skill-icon"></i>
+                        <h5>Windows</h5>
+                    </div>
+                </div>
+
+                 <div class="col-md-3 col-sm-6">
+                    <div class="skill-card">
+                        <i class="fa-brands fa-linux skill-icon"></i>
+                        <h5>Linux</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-card">
+                        <i class="fa-brands fa-bootstrap skill-icon"></i>
+                        <h5>Bootstrap</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-card">
+                        <i class="fa-brands fa-git-alt skill-icon"></i>
+                        <h5>Git</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-card">
+                        <i class="fa-brands fa-github skill-icon"></i>
+                        <h5>Github</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-card">
+                        <i class="fa-brands fa-gitlab skill-icon"></i>
+                        <h5>Gitlab</h5>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="skill-card">
+                        <i class="fa-brands fa-php skill-icon"></i>
+                        <h5>Php</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Skills Section -->
+
+    <section id="proyectos" class="projects-section">
+        <div class="container">
+            <h2 class="section-title text-center animate-on-scroll">Mis Proyectos</h2>
+            <p class="text-center mb-5 animate-on-scroll">Algunos de los trabajos</p>
+            <div class="row g-4">
+                <!-- Proyecto -->
+                <div class="col-lg-4 col-md-6 animate-on-scroll">
+                    <div class="project-card h-100 border-0 shadow-sm">
+
+                        <div class="position-relative">
+                            <img src="/assets/images/project/project-1.png" class="project-img" alt="Aplicativo web LCOE">
+
+                            <!-- Overlay -->
+                            <div class="project-overlay d-flex align-items-center justify-content-center gap-2">
+                                <a href="https://ciya.utc.edu.ec/lcoeapp/" class="btn btn-primary btn-sm">Demo</a>
+                                <a href="https://github.com/danif7o" class="btn btn-outline-light btn-sm">Código</a>
+                            </div>
+                        </div>
+
+                        <div class="project-content">
+                            <h4 class="fw-bold">LCOE App</h4>
+                            <p class="small">
+                            Aplicativo web para el Cálculo del costo nivelago de energía.
+                            </p>
+
+                            <ul class="list-unstyled small mb-3">
+                                <li><i class="fa fa-user"></i> Gestión Administrativa</li>
+                                <li><i class="fa fa-bar-chart"></i> Indicadores comparativos </li>
+                                <li><i class="fa fa-calculator"></i>  Cálculo de Proyectos Energéticos</li>
+                                <li><i class="fa fa-file-pdf"></i>  Reportes</li>
+
+                            </ul>
+                            
+                            <div class="d-flex flex-wrap gap-2 mt-3">
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">HTML5 & CSS</span>
+                                <span class="tech-tag">Bootstrap 5</span>
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">PostgreSQL</span>
+                                <span class="tech-tag">Chart.js</span>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Proyecto 2 -->
+                <div class="col-lg-4 col-md-6 animate-on-scroll">
+                    <div class="project-card h-100 border-0 shadow-sm">
+
+                        <div class="position-relative">
+                            <img src="/assets/images/project/project.png" class="project-img" alt="App Remodelaciones">
+
+                            <!-- Overlay -->
+                            <div class="project-overlay d-flex align-items-center justify-content-center gap-2">
+                                <a href="#" class="btn btn-light btn-sm">Ver más</a>
+                                <a href="#" class="btn btn-outline-warning btn-sm">En proceso</a>
+                            </div>
+                        </div>
+
+                        <div class="project-content">
+                            <h4 class="fw-bold">Remodeling</h4>
+                            <p class="small">
+                                App web para control de remodelación de immuebles.
+                            </p>
+
+                            <ul class="list-unstyled small mb-3">
+                                <li><i class="fa fa-users"></i> Gestión de clientes</li>
+                                <li><i class="fa fa-folder"></i> CRUD de Entidades</li>
+                            </ul>
+                            
+                            <div class="d-flex flex-wrap gap-2 mt-3">
+                                <span class="tech-tag">Django</span>
+                                <span class="tech-tag">HTML5 & CSS</span>
+                                <span class="tech-tag">Bootstrap 5</span>
+                                <span class="tech-tag">SQLite</span>
+                                <span class="tech-tag">FontAwesome </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- Proyecto 3 -->
+                
+            </div>
+        </div>
+    </section>
+    <!-- End Projects Section -->
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4 mb-lg-0 animate-on-scroll">
+                    <h3 class="fw-bold mb-4">Mi Portafolio</h3>
+                    <div class="social-icons mt-4">
+                         <a href="https://github.com/danif7o" target="_blank" aria-label="Github"
+                            class="btn" data-bs-toggle="tooltip"
+                            data-bs-placement="top" title="Ir a mi Github!">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/daniela-tipan-7d/" target="_blank" aria-label="LinkedIn"
+                            class="btn" data-bs-toggle="tooltip"
+                            data-bs-placement="top" title="Ir a mi LinkedIn!">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 animate-on-scroll">
+                    <h4 class="fw-bold mb-4">Contacto</h4>
+                    <p><i class="fa fa-envelope me-3"></i>tipan2002fernanda@gmail.com</p>
+                    <p><i class="fa fa-phone me-3"></i> +593 995951236</p>
+                    <p><i class="fa-solid fa-location-dot me-3"></i> Quito, EC</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>&copy; Desarrollado por Dani 🤍</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Popper-->
+    <link href="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js">
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script>
+        // Animación del navbar al hacer scroll
+        window.addEventListener('scroll', function () {
+            const navbar = document.querySelector('.navbar-custom');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Animación de elementos al hacer scroll
+        function animateOnScroll() {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
+
+                if (elementPosition < screenPosition) {
+                    element.classList.add('animated');
+                }
+            });
+        }
+
+        // Inicializar animaciones al cargar la página
+        window.addEventListener('load', animateOnScroll);
+        window.addEventListener('scroll', animateOnScroll);
+
+        // Navegación suave
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 70,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        var tooltipTriggerList = Array.prototype.slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+</body>
+
+</html>
