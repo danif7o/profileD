@@ -242,7 +242,7 @@ body {
 ------------------------------------------------------*/
 .projects-section {
   padding: 100px 0;
-  background-image: url(/assets/images/back_project.png);
+  background-image: url(assets/images/back_project.png);
 }
 
 .project-card {
