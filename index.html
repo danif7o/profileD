@@ -38,6 +38,9 @@
                         <a class="nav-link text-white" href="#presentacion">Inicio</a>
                     </li>
                     <li class="nav-item px-2">
+                        <a class="nav-link text-white" href="#about">Sobre Mí</a>
+                    </li>
+                    <li class="nav-item px-2">
                         <a class="nav-link text-white" href="#skills">Skills</a>
                     </li>
                     <li class="nav-item px-2">
@@ -66,12 +69,11 @@
                 </div>
                 <div class="col-lg-6 hero-content animate-on-scroll">
                     <h4 class="mb-3">Hey,<span></span> soy</h4>
-                    <h1 class="display-4 fw-bold mb-4">Dani <span class="highlight">Tipán</span></h1>
+                    <h1 class="display-4 fw-bold mb-4">Dani Tipán</h1>
                     <h3 class="mb-4 rotating-text">
                         <span>Systems Engineering</span>
                         <span>Developer</span>
                         <span>Jr. Data Analyst</span>
-
                     </h3>
                     <div class="d-flex flex-wrap justify-content-center gap-3">
                         <a href="mailto:tipan2002fernanda@gmail.com" target="_blank" aria-label="Gmail"
@@ -99,7 +101,7 @@
                             data-bs-placement="left" title="Mirar Proyectos"><i class="fa fa-code ms-2"></i>  Proyectos
                         </a>
                         <button class="mx-2 btn btn-outline-light btn-sm px-4 py-3" data-bs-toggle="modal" data-bs-target="#modal-about" title="Sobre Mi">
-                            <i class="fas fa-user"></i> Sobre Mi
+                            <i class="fas fa-heart" style="color: #c4381f"></i> Conóceme
                         </button>
                     </div>
                 </div>
@@ -127,30 +129,57 @@
 
                 <!-- Start modal: About me -->
                 <div class="modal fade" id="modal-about" tabindex="-1">
-                    <div class="modal-dialog modal-dialog-centered">
-                        <div class="modal-content">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content p-4">
                             <div class="modal-header">
-                                <h5 class="modal-title about"><i class="fas fa-star"></i>Sobre Mi</h5>
+                                <h5 class="modal-title about"><i class="fas fa-star" style="color:#2f3c7e"></i> </h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
 
-                            <div class="modal-body px-4">
-                                <p>
-                                    Soy Daniela Tipán,<span class="about"> Ingeniera en Sistemas</span> y <span class="about">Desarrolladora de Software</span> 
-                                    en formación, apasionada por la tecnología.</span> 
-                                </p>
-                                <p>
-                                    Manejo tecnologías como: <span class="tags-about">HTML</span>, <span class="tags-about">CSS</span>,
-                                    <span class="tags-about">JavaScript</span>, entre otras.
-                                    Frameworks como <span class="tags-about">Django</span> y <span class="tags-about">.NET</span>.  
-                                    También disfruto trabajar con <span class="tags-about">SQL</span>, 
-                                    <span class="tags-about">Python</span> y <span class="tags-about">Power BI</span>.
-                                </p>
-                                <p>
-                                    Me considero <span class="about">proactiva</span>, <span class="about">creativa</span> y 
-                                    siempre lista para aprender algo nuevo.  
-                                    Mi objetivo es crecer como profesional y aportar valor en cada proyecto.
-                                </p>
+                            <div class="modal-body">
+                                <div class="row align-items-center">
+                                    <div class="col-md-6 text-center">
+                                        <div class="profile-card">
+                                            <div class=" animate-on-scroll">
+                                                
+                                                <img src="assets/images/user/profile-icon.png" alt="Profile Icon" class="profile-icon">
+                                            </div>
+                                            <div class="profile-name">
+                                                <h3>Daniela Tipán </h3>
+                                                <span class="profile-badge">Ingeniera en Sistemas</span>
+                                            </div>
+                                                                                    
+                                            <div class="profile-stats">
+                                                <div class="stat-item">
+                                                    <span class="stat-number">1+</span>
+                                                    <span class="stat-label">Años exp.</span>
+                                                </div>
+                                                <div class="stat-item">
+                                                    <span class="stat-number">10+</span>
+                                                    <span class="stat-label">Proyectos</span>
+                                                </div>
+                                            </div>
+                                       </div>
+                    
+                                    </div>
+
+                                    <div class="col-md-6 text center py-2 px-2">
+                                        <div class="profile-card">
+                                        <p>
+                                            <span class="about">Desarrolladora de Software</span> 
+                                            en formación, apasionada por la tecnología y creación de productos
+                                            a través de ideas iniciales.
+                                        </p>
+                                        <button class="btn mt-3 profile-badge"
+                                                data-bs-dismiss="modal"
+                                                onclick="scrollToAbout()">
+                                              <i class="fas fa-arrow-circle-down"></i> Sobre Mí
+                                        </button>
+                                        </div>
+                                    </div>
+
+                                </div>
+
                             </div>
                         </div>
                     </div>
@@ -160,6 +189,57 @@
         </div>
     </section>
     <!-- End Presentation Section -->
+
+    <!-- About Section -->
+    <section id="about" class="dashboard-about">
+        <div class="dashboard-container">
+            <h2 class="section-title text-center animate-on-scroll" style="color:#2f3c7e">Sobre Mí</h2>
+            <div class="dashboard-grid animate-on-scroll">
+                <div class="dashboard-widget widget-profile animate-on-scroll">
+                    <div class="widget-header">
+                        <span class="widget-icon"><i class="fa fa-user"></i></span>
+                        <span class="widget-title">Perfil</span>
+                    </div>
+                    <div class="profile-data">
+                        <div class="data-row">
+                            <span class="data-label">Nombre</span>
+                            <span class="data-value">Daniela Tipán</span>
+                        </div>
+                        <div class="data-row">
+                            <span class="data-label">Rol</span>
+                            <span class="data-value">Ingeniera en Sistemas</span>
+                        </div>
+                        <div class="data-row">
+                            <span class="data-label">Enfoque</span>
+                            <span class="data-value">Desarrollo Software</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="dashboard-widget widget-terminal animate-on-scroll">
+                    <div class="terminal-header">
+                        <span class="terminal-dot red"></span>
+                        <span class="terminal-dot yellow"></span>
+                        <span class="terminal-dot green"></span>
+                        <span class="terminal-title">about.sh</span>
+                    </div>
+                    <div class="terminal-body">
+                        <span class="prompt">$</span>
+                        <span class="command">Acerca de Mí</span>
+                        <p class="terminal-output">
+                        Me caracterizo por ser una profesional <strong>autodidacta, responsable y proactiva</strong>, 
+                        con una mentalidad orientada al aprendizaje continuo y la mejora constante. 
+                        Disfruto trabajar en equipo, colaborar en entornos dinámicos y aportar valor 
+                        en cada proyecto en el que participo.
+                        Siempre lista para aprender algo nuevo.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="dashboard-footer animate-on-scroll">
+                <span class="footer-prompt"><i class="fas fa-arrow-circle-right"></i></span>
+                <span class="footer-command">cat habilidades | grep "siempre aprendiendo"</span>
+            </div>
+        </div>
+    </section>
 
     <!-- Skills Section -->
     <section id="skills" class="skills-section">
@@ -260,7 +340,7 @@
     <section id="proyectos" class="projects-section" style="background-image: url(assets/images/back_project.png);">
         <div class="container">
             <h2 class="section-title text-center animate-on-scroll">Mis Proyectos</h2>
-            <p class="text-center mb-5 animate-on-scroll">Algunos de los trabajos</p>
+            <p class="text-center mb-5 animate-on-scroll">Algunos de mis trabajos</p>
             <div class="row g-4">
                 <!-- Proyecto -->
                 <div class="col-lg-4 col-md-6 animate-on-scroll">
@@ -440,6 +520,12 @@
         var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
             return new bootstrap.Tooltip(tooltipTriggerEl)
         })
+
+        function scrollToAbout() {
+        setTimeout(() => {
+            document.getElementById("about").scrollIntoView({ behavior: "smooth" });
+        }, 300);
+    }
     </script>
 </body>
 
