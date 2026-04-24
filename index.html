@@ -24,6 +24,10 @@
     <!-- Icons  -->
     <link
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
       integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
       crossorigin="anonymous"
@@ -104,10 +108,8 @@
           <div class="col-lg-6 hero-content animate-on-scroll">
             <h4 class="mb-3">Hey,<span></span> soy</h4>
             <h1 class="display-4 fw-bold mb-4">Dani Tipán</h1>
-            <h3 class="mb-4 rotating-text">
-              <span>Systems Engineering</span>
-              <span>Developer</span>
-              <span>Jr. Data Analyst</span>
+            <h3 class="mb-4">
+              <span id="typing-text"></span>
             </h3>
             <div class="d-flex flex-wrap justify-content-center gap-3">
               <a
@@ -283,12 +285,12 @@
           class="section-title text-center animate-on-scroll"
           style="color: #2f3c7e"
         >
-          Sobre Mí
+          <i class="fas fa-heart" aria-hidden="true"></i> Sobre Mí
         </h2>
         <div class="dashboard-grid animate-on-scroll">
           <div class="dashboard-widget widget-profile animate-on-scroll">
             <div class="widget-header">
-              <span class="widget-icon"><i class="fa fa-user"></i></span>
+              <!--<span class="widget-icon"><i class="fa fa-user"></i></span>-->
               <span class="widget-title">Perfil</span>
             </div>
             <div class="profile-data">
@@ -340,39 +342,42 @@
 
     <!-- Skills Section -->
     <section id="skills" class="skills-section">
-      <div class="container">
+      <div class="dashboard-container">
         <h2 class="section-title text-center animate-on-scroll">
-          Skills Técnicas
+          <i class="fas fa-bolt" aria-hidden="true"></i> Skills Técnicas
         </h2>
-        <p class="text-center mb-5 animate-on-scroll">
-          Lenguajes y tecnologías
+        <p
+          class="text-center mb-5 animate-on-scroll"
+          style="color: var(--text-secondary)"
+        >
+          Lenguajes, frameworks y herramientas que utilizo
         </p>
 
         <div class="row g-4 animate-on-scroll">
-          <!-- Skill Card -->
+          <!-- Frontend 
           <div class="col-md-3 col-sm-6">
             <div class="skill-card">
-              <i class="fa-brands fa-python skill-icon"></i>
-              <h5>Python</h5>
+              <i class="fa-brands fa-vuejs skill-icon"></i>
+              <h5>Vue.js</h5>
             </div>
-          </div>
+          </div> -->
 
           <div class="col-md-3 col-sm-6">
-            <div class="skill-card">
+            <div class="skill-card" data-skill="js">
               <i class="fa-brands fa-js skill-icon"></i>
               <h5>JavaScript</h5>
             </div>
           </div>
 
           <div class="col-md-3 col-sm-6">
-            <div class="skill-card">
+            <div class="skill-card" data-skill="html">
               <i class="fa-brands fa-html5 skill-icon"></i>
               <h5>HTML5</h5>
             </div>
           </div>
 
           <div class="col-md-3 col-sm-6">
-            <div class="skill-card">
+            <div class="skill-card" data-skill="css">
               <i class="fa-brands fa-css3-alt skill-icon"></i>
               <h5>CSS3</h5>
             </div>
@@ -385,13 +390,29 @@
             </div>
           </div>
 
+          <!-- Backend -->
           <div class="col-md-3 col-sm-6">
-            <div class="skill-card">
-              <i class="fa-brands fa-angular skill-icon"></i>
-              <h5>Angular</h5>
+            <div class="skill-card" data-skill="python">
+              <i class="fa-brands fa-python skill-icon"></i>
+              <h5>Python</h5>
             </div>
           </div>
 
+          <div class="col-md-3 col-sm-6">
+            <div class="skill-card">
+              <i class="fa-brands fa-node skill-icon"></i>
+              <h5>Node.js</h5>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="skill-card">
+              <i class="fa-brands fa-php skill-icon"></i>
+              <h5>PHP</h5>
+            </div>
+          </div>
+
+          <!-- Mobile -->
           <div class="col-md-3 col-sm-6">
             <div class="skill-card">
               <i class="fa-brands fa-flutter skill-icon"></i>
@@ -399,20 +420,7 @@
             </div>
           </div>
 
-          <div class="col-md-3 col-sm-6">
-            <div class="skill-card">
-              <i class="fa-brands fa-microsoft skill-icon"></i>
-              <h5>Windows</h5>
-            </div>
-          </div>
-
-          <div class="col-md-3 col-sm-6">
-            <div class="skill-card">
-              <i class="fa-brands fa-linux skill-icon"></i>
-              <h5>Linux</h5>
-            </div>
-          </div>
-
+          <!-- DevOps & Tools -->
           <div class="col-md-3 col-sm-6">
             <div class="skill-card">
               <i class="fa-brands fa-git-alt skill-icon"></i>
@@ -423,27 +431,57 @@
           <div class="col-md-3 col-sm-6">
             <div class="skill-card">
               <i class="fa-brands fa-github skill-icon"></i>
-              <h5>Github</h5>
+              <h5>GitHub</h5>
             </div>
           </div>
 
           <div class="col-md-3 col-sm-6">
             <div class="skill-card">
               <i class="fa-brands fa-gitlab skill-icon"></i>
-              <h5>Gitlab</h5>
+              <h5>GitLab</h5>
+            </div>
+          </div>
+
+          <!-- OS -->
+          <div class="col-md-3 col-sm-6">
+            <div class="skill-card">
+              <i class="fa-brands fa-linux skill-icon"></i>
+              <h5>Linux</h5>
             </div>
           </div>
 
           <div class="col-md-3 col-sm-6">
             <div class="skill-card">
-              <i class="fa-brands fa-php skill-icon"></i>
-              <h5>Php</h5>
+              <i class="fa-brands fa-windows skill-icon"></i>
+              <h5>Windows</h5>
             </div>
           </div>
 
+          <!-- Databases -->
+          <div class="col-md-3 col-sm-6">
+            <div class="skill-card">
+              <i class="fa-solid fa-database skill-icon"></i>
+              <h5>MySQL</h5>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="skill-card">
+              <i class="fa-solid fa-database skill-icon"></i>
+              <h5>PostgreSQL</h5>
+            </div>
+          </div>
+
+          <div class="col-md-3 col-sm-6">
+            <div class="skill-card">
+              <i class="fa-solid fa-database skill-icon"></i>
+              <h5>SQL Server</h5>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+
     <!-- End Skills Section -->
 
     <!-- Start : Section Projects -->
@@ -454,7 +492,9 @@
       style="background-image: url(assets/images/back_project.png)"
     >
       <div class="container">
-        <h2 class="section-title text-center animate-on-scroll">Proyectos</h2>
+        <h2 class="section-title text-center animate-on-scroll">
+          <i class="fas fa-folder" aria-hidden="true"></i> Proyectos
+        </h2>
         <div class="terminal-container animate-on-scroll">
           <div class="header-project">
             <div class="window-controls">
@@ -516,14 +556,28 @@
                     <i class="fas fa-angle-right" style="color: #3fafef"></i>
                     Aplicativo web para determinar el cálculo del costo nivelado
                     de energía.
-
-                   
                   </div>
-                  <ul class="compact-features">
-                      <li><i class="fa fa-user-circle"></i> <span>Gestión Administrativa</span> <span class="badge">Integral</span></li>
-                      <li><i class="fa fa-chart-simple"></i> <span>Indicadores Comparativos</span> <span class="badge">Tiempo real</span></li>
-                      <li><i class="fa fa-leaf"></i> <span>Cálculo de Proyectos Energéticos</span> <span class="badge">Eficiencia</span></li>
-                      <li><i class="fa fa-file-alt"></i> <span>Reportes Automatizados</span> <span class="badge">Multi-formato</span></li>
+                  <ul class="">
+                    <li>
+                      <i class="fa fa-user-circle"></i>
+                      <span>Gestión Administrativa</span>
+                      <span class="badge">Integral</span>
+                    </li>
+                    <li>
+                      <i class="fa fa-chart-simple"></i>
+                      <span>Indicadores Comparativos</span>
+                      <span class="badge">Tiempo real</span>
+                    </li>
+                    <li>
+                      <i class="fa fa-leaf"></i>
+                      <span>Cálculo de Proyectos Energéticos</span>
+                      <span class="badge">Eficiencia</span>
+                    </li>
+                    <li>
+                      <i class="fa fa-file-alt"></i>
+                      <span>Reportes Automatizados</span>
+                      <span class="badge">Multi-formato</span>
+                    </li>
                   </ul>
                   <div class="stack-terminal">
                     <span>Django</span>
@@ -542,7 +596,7 @@
                 </div>
               </div>
 
-                            <!-- PROYECTO 3: -->
+              <!-- PROYECTO 3: -->
               <div class="term-project">
                 <div class="project-prompt">
                   <div class="project-name-term">
@@ -578,11 +632,11 @@
                 </div>
                 <div class="project-info-term">
                   <div class="term-description">
-                    Task Manager es una aplicación web diseñada para optimizar la
-                    productividad personal y profesional mediante un sistema
-                    único de priorización. Utiliza una fórmula matemática
-                    que combina urgencia, importancia y tiempo
-                    estimado para calcular la prioridad real de cada tarea.
+                    Task Manager es una aplicación web diseñada para optimizar
+                    la productividad personal y profesional mediante un sistema
+                    único de priorización. Utiliza una fórmula matemática que
+                    combina urgencia, importancia y tiempo estimado para
+                    calcular la prioridad real de cada tarea.
                   </div>
                   <div class="stack-terminal">
                     <span>Django</span><span>Python</span><span>Mysql</span
@@ -627,7 +681,7 @@
                     />
                   </div>
                   <div class="gallery-img">
-                   <i class="fa fa-laptop"></i>
+                    <i class="fa fa-laptop"></i>
                     <!-- <img
                       src=""
                       alt=""
@@ -657,105 +711,12 @@
 
             <div class="footer-term">
               <i class="fas fa-terminal"></i> dani@portfolio:~/proyectos$ echo
-              "Presentación de Proyectos · Realizados
-              con ❤️"
+              "Presentación de Proyectos · Realizados con ❤️"
             </div>
           </div>
         </div>
       </div>
     </section>
-
-    <!-- End Project -->
-
-    <!--<section id="proyectos" class="projects-section" style="background-image: url(assets/images/back_project.png);">
-        <div class="container">
-            <h2 class="section-title text-center animate-on-scroll">Mis Proyectos</h2>
-            <p class="text-center mb-5 animate-on-scroll">Algunos de mis trabajos</p>
-            <div class="row g-4">
-                 Proyecto
-                <div class="col-lg-4 col-md-6 animate-on-scroll">
-                    <div class="project-card h-100 border-0 shadow-sm">
-
-                        <div class="position-relative">
-                            <img src="assets/images/project/project-1.png" class="project-img" alt="Aplicativo web LCOE">
-
-                             Overlay
-                            <div class="project-overlay d-flex align-items-center justify-content-center gap-2">
-                                <a href="https://ciya.utc.edu.ec/lcoeapp/" class="btn btn-primary btn-sm">Demo</a>
-                                <a href="https://github.com/danif7o" class="btn btn-outline-light btn-sm">Código</a>
-                            </div>
-                        </div>
-
-                        <div class="project-content">
-                            <h4 class="fw-bold">LCOE App</h4>
-                            <p class="small">
-                            Aplicativo web para determinar el cálculo del costo nivelado de energía.
-                            </p>
-
-                            <ul class="list-unstyled small mb-3">
-                                <li><i class="fa fa-user"></i> Gestión Administrativa</li>
-                                <li><i class="fa fa-bar-chart"></i> Indicadores comparativos </li>
-                                <li><i class="fa fa-calculator"></i>  Cálculo de Proyectos Energéticos</li>
-                                <li><i class="fa fa-file-pdf"></i>  Reportes</li>
-
-                            </ul>
-                            
-                            <div class="d-flex flex-wrap gap-2 mt-3">
-                                <span class="tech-tag">Django</span>
-                                <span class="tech-tag">HTML5 & CSS</span>
-                                <span class="tech-tag">Bootstrap 5</span>
-                                <span class="tech-tag">Python</span>
-                                <span class="tech-tag">PostgreSQL</span>
-                                <span class="tech-tag">Chart.js</span>
-
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                 Proyecto 2 
-                <div class="col-lg-4 col-md-6 animate-on-scroll">
-                    <div class="project-card h-100 border-0 shadow-sm">
-
-                        <div class="position-relative">
-                            <img src="assets/images/project/project.png" class="project-img" alt="App Remodelaciones">
-
-                             Overlay 
-                            <div class="project-overlay d-flex align-items-center justify-content-center gap-2">
-                                <a href="#" class="btn btn-light btn-sm">Ver más</a>
-                                <a href="#" class="btn btn-outline-warning btn-sm">En proceso</a>
-                            </div>
-                        </div>
-
-                        <div class="project-content">
-                            <h4 class="fw-bold">Remodeling</h4>
-                            <p class="small">
-                                App web para control de remodelación de immuebles.
-                            </p>
-
-                            <ul class="list-unstyled small mb-3">
-                                <li><i class="fa fa-users"></i> Gestión de clientes</li>
-                                <li><i class="fa fa-folder"></i> CRUD de Entidades</li>
-                            </ul>
-                            
-                            <div class="d-flex flex-wrap gap-2 mt-3">
-                                <span class="tech-tag">Django</span>
-                                <span class="tech-tag">HTML5 & CSS</span>
-                                <span class="tech-tag">Bootstrap 5</span>
-                                <span class="tech-tag">SQLite</span>
-                                <span class="tech-tag">FontAwesome </span>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                 Proyecto 3
-                
-            </div>
-        </div>
-    </section>
-     End Projects Section -->
-
     <!-- Footer -->
     <footer id="footer" class="footer">
       <div class="container">
@@ -814,6 +775,44 @@
       integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
       crossorigin="anonymous"
     ></script>
+    <script src="assets/js/script.js"></script>
+
+    <script>
+      const texts = ["Systems Engineering", "Developer", "Jr. Data Analyst"];
+
+      let i = 0; // índice del texto
+      let j = 0; // índice de la letra
+      let currentText = "";
+      let isDeleting = false;
+
+      const speed = 100;
+      const eraseSpeed = 50;
+      const delay = 1500;
+
+      function type() {
+        const element = document.getElementById("typing-text");
+        currentText = texts[i];
+
+        if (isDeleting) {
+          element.textContent = currentText.substring(0, j--);
+        } else {
+          element.textContent = currentText.substring(0, j++);
+        }
+
+        if (!isDeleting && j === currentText.length) {
+          isDeleting = true;
+          setTimeout(type, delay);
+        } else if (isDeleting && j === 0) {
+          isDeleting = false;
+          i = (i + 1) % texts.length;
+          setTimeout(type, 300);
+        } else {
+          setTimeout(type, isDeleting ? eraseSpeed : speed);
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", type);
+    </script>
 
     <script>
       // Animación del navbar al hacer scroll
